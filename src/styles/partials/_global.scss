@@ -2,6 +2,9 @@
 @use './mixins' as *;
 @use 'fonts';
 
+ul {
+    list-style-type: none;
+}
 
 html,
 body {
@@ -9,22 +12,29 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: $font-regular;
-    color: $instock-black;
+    color: $light-orange;
+    height: auto;
+    background-attachment: fixed;
+    background-size: cover;
 
 }
 
-html{
-    overflow: hidden;
-    @include tablet{
-        overflow:auto;
-    }
+html {
+    //overflow: hidden;
+    // @include tablet{
+    //     overflow:auto;
+    // }
+    height: auto;
+    background-image: linear-gradient(to top right, $black , $light-teal);
 }
-body{
+
+body {
     height: 100%;
     width: 100%;
     overflow: auto;
-    @include tablet{
-        overflow:none;
+
+    @include tablet {
+        overflow: none;
     }
 }
 
