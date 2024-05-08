@@ -7,9 +7,19 @@ li{
 padding: 0 $mobile-margin;
 }
 
+button{
+    background: rgba(0,0,0,0);
+    border: none;
+    color: $light-orange;
+    cursor: pointer;
+}
+
 .header{
 
     &__contact{
+
+        display:flex;
+        
 
         &--list{
             display:flex;
