@@ -13,7 +13,13 @@ li {
 
     &__content {
         @include card;
-        flex-direction: row;
+        @include mobile{
+            flex-direction: column;
+        }
+        @include tablet{
+            flex-direction: row;
+        }
+        
         margin: 2px;
 
 
@@ -23,9 +29,27 @@ li {
         }
 
         &__headshot {
-            width: 200px;
+            @include small{
+                width: calc(100% - 16px);
+                height:auto;
+                object-fit: cover;
+                max-height: 380px;
+            }
+            @include mobile{
+                width: 300px;
+                height: auto;
+                max-height: 380px;
+            }
+            @include tablet{
+                width: 300px;
+                height: auto;
+                max-height: 380px;
+            }
+            
+
             border-radius: 10px;
             margin: calc($mobile-margin/2);
+            object-fit: cover;
         }
 
         &__contact {
