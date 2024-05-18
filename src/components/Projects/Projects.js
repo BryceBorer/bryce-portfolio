@@ -3,8 +3,18 @@ import React from 'react';
 const Projects = () => {
   return (
     <section id="projects">
-      <h2>Projects</h2>
-      <p>Add your projects here...</p>
+      <div className='projects__saicheese'>
+
+      </div>
+
+      <div className='projects__industry'>
+
+      </div>
+
+      <div className='projects__data'>
+        
+      </div>
+
     </section>
   );
 }

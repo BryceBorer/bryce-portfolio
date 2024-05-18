@@ -1,0 +1,20 @@
+@import '../../styles/partials/_mixins.scss';
+@import '../../styles/partials/_variables';
+
+.projects{
+    @include card-wrap;
+    margin: calc($mobile-margin/2);
+
+    &__saicheese{
+        @include card;
+        
+    }
+
+    &__industry{
+
+    }
+
+    &__data{
+
+    }
+}

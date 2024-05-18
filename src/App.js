@@ -14,6 +14,7 @@ function App() {
       <div className="App">
         <Header />
         <Hero />
+        <Projects />
         <Routes>
           <Route path="/projects" component={Projects} />
           <Route path="/" component={About} />
