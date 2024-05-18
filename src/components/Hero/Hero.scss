@@ -3,31 +3,52 @@
 
 // header__contact__github
 
-li{
-padding: 0 $mobile-margin;
+li {
+    padding: 0 $mobile-margin;
 }
 
-.hero{
+.hero {
+    @include card-wrap;
+    margin: calc($mobile-margin/2);
 
-    &__contact{
+    &__content {
+        @include card;
+        flex-direction: row;
+        margin: 2px;
 
-        &--list{
-            display:flex;
 
+        &__text {
+            display: flex;
+            flex-direction: column;
         }
 
-        &__github{
+        &__headshot {
+            width: 200px;
+            border-radius: 10px;
+            margin: calc($mobile-margin/2);
+        }
 
-            &--svg{
-                height: 16px;
+        &__contact {
+
+            &--list {
+                display: flex;
+
             }
-        }
-        &__linkedin{
 
-            &--svg{
-                height: 16px;
+            &__github {
+
+                &--svg {
+                    height: 16px;
+                }
             }
-        }
 
+            &__linkedin {
+
+                &--svg {
+                    height: 16px;
+                }
+            }
+
+        }
     }
 }
