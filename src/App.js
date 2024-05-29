@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
-import About from './components/About/About';
+import Experience from './components/Experience/Experience';
 import Projects from './components/Projects/Projects';
 //import Footer from './components/Footer';
 import './App.scss';
@@ -14,10 +14,11 @@ function App() {
       <div className="App">
         <Header />
         <Hero />
+        <Experience />
         <Projects />
         <Routes>
           <Route path="/projects" component={Projects} />
-          <Route path="/" component={About} />
+          <Route path="/" component={Hero} />
         </Routes>
       </div>
     </BrowserRouter>

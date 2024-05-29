@@ -17,7 +17,17 @@ const Header = () => {
             </li>
             <li className="header__contact__work">
                 <button className="header__contact__work--button">
-                  Work Experience
+                  Skills
+                </button>
+            </li>
+            <li className="header__contact__work">
+                <button className="header__contact__work--button">
+                  Experience
+                </button>
+            </li>
+            <li className="header__contact__work">
+                <button className="header__contact__work--button">
+                  Education
                 </button>
             </li>
             

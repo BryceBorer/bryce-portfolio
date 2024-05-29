@@ -1,0 +1,58 @@
+@import '../../styles/partials/_mixins.scss';
+@import '../../styles/partials/_variables';
+
+ul {
+    padding: 0;
+}
+
+li {}
+
+.exp {
+    display: flex;
+    flex-direction: column;
+
+
+    @include tablet {
+        flex-direction: row;
+    }
+
+    &__skills {
+        @include card-wrap;
+        align-items: center;
+        flex-direction: column;
+        margin: calc($mobile-margin/2);
+        background-color: aqua;
+        height: 164px;
+        width: 164px;
+
+        &__title {}
+
+        &__list {
+            margin: 0;
+        }
+
+    }
+
+    &__experience {
+        @extend .exp__skills;
+
+        &__title {}
+
+        &__list {
+            margin: 0;
+        }
+
+    }
+
+    &__education {
+        @extend .exp__skills;
+
+        &__title {}
+
+        &__list {
+            margin: 0;
+        }
+
+    }
+
+}

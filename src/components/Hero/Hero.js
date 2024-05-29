@@ -14,10 +14,19 @@ const Hero = () => {
           alt="Bryce headshot"
         />
         <div className="hero__content__text">
-          <h1>Bryce Borer</h1>
-          <h2>Software Engineer</h2>
-          <h3>I thrive on turning complex problems into elegant software solutions.</h3>
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</h3>
+          <h1 className="hero__content__text--name">Bryce Borer</h1>
+          <h2 className="hero__content__text--job">Full Stack Developer</h2>
+          <p className="hero__content__text--about">Hi, I'm Bryce, a passionate full stack developer with a love for programming
+            and problem-solving. With a strong foundation in software development,
+            I enjoy creating innovative solutions and bringing ideas to life through code.
+            My experience spans various technologies and programming languages, and I am
+            always eager to learn and adapt to new challenges.
+          </p>
+          <p className="hero__content__text--about">
+            Feel free to connect with me on LinkedIn or check out my projects.
+          </p>
+          <p className="hero__content__text--about">
+            Let's create something amazing together!</p>
         </div>
 
       </div>

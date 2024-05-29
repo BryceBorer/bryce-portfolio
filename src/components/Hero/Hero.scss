@@ -15,6 +15,7 @@ li {
         @include card;
         @include mobile{
             flex-direction: column;
+            align-items: center;
         }
         @include tablet{
             flex-direction: row;
@@ -26,6 +27,18 @@ li {
         &__text {
             display: flex;
             flex-direction: column;
+
+            &--name{
+                margin:calc($mobile-margin/2);
+            }
+            &--job{
+                margin:calc($mobile-margin/2);            
+            }
+
+            &--about{
+                margin:calc($mobile-margin/2);           
+             }
+
         }
 
         &__headshot {

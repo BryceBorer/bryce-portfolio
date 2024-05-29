@@ -11,10 +11,6 @@ const Projects = () => {
 
       </div>
 
-      <div className='projects__data'>
-        
-      </div>
-
     </section>
   );
 }
