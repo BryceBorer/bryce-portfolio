@@ -6,11 +6,11 @@ const Experience = () => {
   return (
     <section className="exp">
       <div className="exp--wrapper">
-      <div className="exp__skills">
-        <h2 className="exp__skills--title">
+      <div className="exp__card">
+        <h2 className="exp__card--title">
           Skills
         </h2>
-        <ul className="exp__skills__list">
+        <ul className="exp__card__list">
           <li>
             Lorem ipsum
           </li>
@@ -24,11 +24,11 @@ const Experience = () => {
       </div>
       </div>
       <div className="exp--wrapper">
-      <div className="exp__experience">
-        <h2 className="exp__experience--title">
+      <div className="exp__card">
+        <h2 className="exp__card--title">
           Experience
         </h2>
-        <ul className="exp__experience__list">
+        <ul className="exp__card__list">
           <li>
             Lorem ipsum
           </li>
@@ -42,11 +42,11 @@ const Experience = () => {
       </div>
       </div>
       <div className="exp--wrapper">
-      <div className="exp__education">
-        <h2 className="exp__education--title">
+      <div className="exp__card">
+        <h2 className="exp__card--title">
           Education
         </h2>
-        <ul className="exp__education__list">
+        <ul className="exp__card__list">
           <li>
             Lorem ipsum
           </li>

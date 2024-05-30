@@ -12,7 +12,6 @@ li {}
     display: flex;
     flex-direction: column;
 
-
     @include tablet {
         flex-direction: row;
     }
@@ -23,34 +22,12 @@ li {}
         height: 168px;
     }
 
-    &__skills {
+    &__card {
         @include card;
         align-items: center;
         flex-direction: column;
         margin: 2px;
         height: auto;
-
-        &__title {}
-
-        &__list {
-            margin: 0;
-        }
-
-    }
-
-    &__experience {
-        @extend .exp__skills;
-
-        &__title {}
-
-        &__list {
-            margin: 0;
-        }
-
-    }
-
-    &__education {
-        @extend .exp__skills;
 
         &__title {}
 
