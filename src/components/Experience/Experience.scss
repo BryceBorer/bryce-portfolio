@@ -7,6 +7,7 @@ ul {
 
 li {}
 
+
 .exp {
     display: flex;
     flex-direction: column;
@@ -16,14 +17,18 @@ li {}
         flex-direction: row;
     }
 
-    &__skills {
+    &--wrapper {
         @include card-wrap;
+        margin: calc($mobile-margin/2);
+        height: 168px;
+    }
+
+    &__skills {
+        @include card;
         align-items: center;
         flex-direction: column;
-        margin: calc($mobile-margin/2);
-        background-color: aqua;
-        height: 164px;
-        width: 164px;
+        margin: 2px;
+        height: auto;
 
         &__title {}
 

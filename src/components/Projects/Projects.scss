@@ -5,13 +5,22 @@
     @include card-wrap;
     margin: calc($mobile-margin/2);
 
+    &--wrapper{
+        @include card-wrap;
+        margin: calc($mobile-margin/2);
+        height: 168px;
+    }
+
     &__saicheese{
-        @include card;
+        align-items: center;
+        flex-direction: column;
+        margin: 2px;
+        height: auto;
 
     }
 
     &__industry{
-
+        @extend .projects__saicheese;
     }
 
 }

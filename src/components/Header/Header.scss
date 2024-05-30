@@ -17,7 +17,6 @@ button{
 .header{   
     @include card-wrap;
     margin: calc($mobile-margin/2);
-    background-color: aqua;
     height: 64px;
 
     &__contact{
@@ -26,7 +25,6 @@ button{
         margin:2px;
         display:flex;
         height: 60px;
-        //width: calc(100% - 4px);
 
         &--list{
             display:flex;

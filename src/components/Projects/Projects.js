@@ -2,13 +2,17 @@ import React from 'react';
 
 const Projects = () => {
   return (
-    <section id="projects">
-      <div className='projects__saicheese'>
+    <section className="projects">
+      <div className="projects--wrapper">
+        <div className='projects__saicheese'>
 
+        </div>
       </div>
 
-      <div className='projects__industry'>
+      <div className="projects--wrapper">
+        <div className='projects__industry'>
 
+        </div>
       </div>
 
     </section>

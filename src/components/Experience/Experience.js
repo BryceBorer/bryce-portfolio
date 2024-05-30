@@ -5,6 +5,7 @@ const Experience = () => {
 
   return (
     <section className="exp">
+      <div className="exp--wrapper">
       <div className="exp__skills">
         <h2 className="exp__skills--title">
           Skills
@@ -21,6 +22,8 @@ const Experience = () => {
           </li>
         </ul>
       </div>
+      </div>
+      <div className="exp--wrapper">
       <div className="exp__experience">
         <h2 className="exp__experience--title">
           Experience
@@ -37,6 +40,8 @@ const Experience = () => {
           </li>
         </ul>
       </div>
+      </div>
+      <div className="exp--wrapper">
       <div className="exp__education">
         <h2 className="exp__education--title">
           Education
@@ -52,6 +57,7 @@ const Experience = () => {
             Lorem ipsum
           </li>
         </ul>
+      </div>
       </div>
     </section>
   );
