@@ -9,13 +9,20 @@ const Projects = () => {
         <div className='projects__saicheese'>
           <div className='projects__saicheese--img' >
             IMAGE
-            </div>
+          </div>
         </div>
-      </div>
 
-      <div className="projects--wrapper">
+
         <div className='projects__industry'>
+          <div className='projects__industry--img' >
+            IMAGE
+          </div>
+        </div>
 
+        <div className='projects__notebook'>
+          <div className='projects__notebook--img' >
+            IMAGE
+          </div>
         </div>
       </div>
 

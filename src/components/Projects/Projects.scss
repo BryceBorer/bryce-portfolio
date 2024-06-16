@@ -6,6 +6,7 @@
     margin: calc($mobile-margin/2);
 
 
+
     &--wrapper {
         //@include card;
         margin: calc($mobile-margin/2);
@@ -43,6 +44,13 @@
     }
 
     &__industry {
+        @extend .projects__saicheese;
+        @extend .projects__saicheese__img !optional;
+        // background-image: url('../../assets/images/');
+
+    }
+
+    &__notebook{
         @extend .projects__saicheese;
     }
 
