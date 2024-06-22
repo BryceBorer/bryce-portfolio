@@ -2,56 +2,48 @@
 @import '../../styles/partials/_variables';
 
 .projects {
-    @include card-wrap;
+   display:flex;
+   flex-direction: column;
     margin: calc($mobile-margin/2);
 
 
 
     &--wrapper {
-        //@include card;
+        @include card;
         margin: calc($mobile-margin/2);
         height: 300px;
         width: calc(100% - $mobile-margin);
+        // @include card-wrap;
     }
 
     &__saicheese {
-        align-items: center;
-        flex-direction: column;
-        margin: 2px;
-        height: 100%;
-        width: 100%;
-
-
+        @include project-card;
+        
         &--img {
-            display: flex;
-            border-radius: 10px;
-            background-repeat: no-repeat;
-            background-size: cover;
+            @include project-image;
             background-image: url('../../assets/images/saicheese-small.jpg');
-            width:100%;
-            height: 100%;
 
             @include tablet {
-                
-                // height: 300px;
-                // width: 500px;
                 background-image: url('../../assets/images/saicheese-small.jpg');
-                
             }
-
-
         }
     }
 
     &__industry {
-        @extend .projects__saicheese;
-        @extend .projects__saicheese__img !optional;
-        // background-image: url('../../assets/images/');
+        @include project-card;
 
+        &--img{
+            @include project-image;
+            background-image: url('../../assets/images/industry.jpg');
+        }
     }
 
-    &__notebook{
-        @extend .projects__saicheese;
-    }
+    &__science{
+        @include project-card;
 
+        &--img{
+            @include project-image;
+            background-image: url('../../assets/images/dscience2.jpg');
+        }
+    }
 }

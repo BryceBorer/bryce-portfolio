@@ -11,16 +11,17 @@ const Projects = () => {
             IMAGE
           </div>
         </div>
-
-
+      </div>
+      <div className="projects--wrapper">
         <div className='projects__industry'>
           <div className='projects__industry--img' >
             IMAGE
           </div>
         </div>
-
-        <div className='projects__notebook'>
-          <div className='projects__notebook--img' >
+      </div>
+      <div className="projects--wrapper">
+        <div className='projects__science'>
+          <div className='projects__science--img' >
             IMAGE
           </div>
         </div>

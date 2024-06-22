@@ -11,6 +11,7 @@
     @content;
   }
 }
+
 @mixin tablet {
   @media (min-width: $tablet-width) {
     @content;
@@ -34,5 +35,22 @@
   display: flex;
   background-image: linear-gradient(to top right, $dark-teal , $light-teal);
   border-radius: 10px;
-  width:100%
+  width: 100%
+}
+
+@mixin project-card {
+  align-items: center;
+  flex-direction: column;
+  margin: 2px;
+  height: 100%;
+  width: 50%;
+}
+
+@mixin project-image {
+  display: flex;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
