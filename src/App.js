@@ -1,27 +1,25 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import Header from './components/Header/Header';
-import Hero from './components/Hero/Hero';
-import Experience from './components/Experience/Experience';
-import Projects from './components/Projects/Projects';
+import Menu from './components/Menu/Menu';
+import About from './pages/About/About';
+import Experience from './pages/Experience/Experience';
+import Projects from './pages/Projects/Projects';
 //import Footer from './components/Footer';
 import './App.scss';
 import './styles/partials/_global.scss'
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Header />
-        <Hero />
-        <Experience />
-        <Projects />
+    <div className="App">
+      <BrowserRouter>
         <Routes>
-          <Route path="/projects" component={Projects} />
-          <Route path="/" component={Hero} />
+          <Route path="/" element={<About/>} />
+          <Route path="/experience" element={<Experience/>} />
+          <Route path="/projects" element={<Projects/>} />
         </Routes>
-      </div>
-    </BrowserRouter>
+
+      </BrowserRouter>
+    </div>
   );
 }
 

@@ -1,7 +1,7 @@
 @import '../../styles/partials/_mixins.scss';
 @import '../../styles/partials/_variables';
 
-// header__contact__github
+// menu__contact__github
 
 li{
 padding: 0 $mobile-margin;
@@ -14,7 +14,7 @@ button{
     cursor: pointer;
 }
 
-.header{   
+.menu{   
     @include card-wrap;
     margin: calc($mobile-margin/2);
     height: 64px;

@@ -8,21 +8,21 @@ const Projects = () => {
       <div className="projects--wrapper">
         <div className='projects__saicheese'>
           <div className='projects__saicheese--img' >
-            IMAGE
           </div>
         </div>
       </div>
       <div className="projects--wrapper">
         <div className='projects__industry'>
           <div className='projects__industry--img' >
-            IMAGE
           </div>
+          <p>
+
+          </p>
         </div>
       </div>
       <div className="projects--wrapper">
         <div className='projects__science'>
           <div className='projects__science--img' >
-            IMAGE
           </div>
         </div>
       </div>
