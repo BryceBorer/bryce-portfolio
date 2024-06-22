@@ -1,5 +1,8 @@
 import "./Experience.scss";
 
+import brainstationIcon from "../../assets/icons/brainstation-logo.svg"
+import brainstationIconWhite from "../../assets/icons/brainstation-logo-white.svg"
+
 const Experience = () => {
 
 
@@ -8,17 +11,17 @@ const Experience = () => {
       <div className="exp--wrapper">
         <div className="exp__card">
           <h2 className="exp__card--title">
-            Skills
+          &lt; Skills /&gt;
           </h2>
           <ul className="exp__card__list">
             <li>
-              Lorem ipsum
+              Front-end design with React.JS, SASS, and Axios
             </li>
             <li>
-              Lorem ipsum
+              Back-end architecture with Express.JS and Knex
             </li>
             <li>
-              Lorem ipsum
+              Javascript | HTML | CSS | Python | MySQL
             </li>
           </ul>
         </div>
@@ -26,17 +29,22 @@ const Experience = () => {
       <div className="exp--wrapper">
         <div className="exp__card">
           <h2 className="exp__card--title">
-            Experience
+          &lt; Experience /&gt;
           </h2>
           <ul className="exp__card__list">
             <li>
-              Lorem ipsum
+              Software Engineering Teaching Assistant<br/>
+              Brainstation <br/>
+              April 2024 - Current
             </li>
             <li>
-              Lorem ipsum
+              Digital Youth Rally Hackathon Mentor
+              Open Hub Project<br/>
+              May 2024
             </li>
             <li>
-              Lorem ipsum
+              Industry Competition Winner <br/>
+              
             </li>
           </ul>
         </div>
@@ -44,17 +52,16 @@ const Experience = () => {
       <div className="exp--wrapper">
         <div className="exp__card">
           <h2 className="exp__card--title">
-            Education
+          &lt; Education /&gt;
           </h2>
           <ul className="exp__card__list">
             <li>
-              Lorem ipsum
+              Software Engineering Bootcamp - Brainstation 
+              <img className="icon" src={brainstationIconWhite}
+              alt="Brainstation Icon"/>
             </li>
             <li>
-              Lorem ipsum
-            </li>
-            <li>
-              Lorem ipsum
+              BSc Electrical Engineering - Ontario Tech University
             </li>
           </ul>
         </div>

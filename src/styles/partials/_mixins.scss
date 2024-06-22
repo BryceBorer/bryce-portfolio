@@ -34,7 +34,8 @@
 @mixin card {
   display: flex;
   align-items: center;
-  background-image: linear-gradient(to top right, $dark-teal , $light-teal);
+  // background-image: linear-gradient(to top right, $dark-teal , $light-teal);
+  // background-color: white;
   border-radius: 10px;
   width: 100%
 }

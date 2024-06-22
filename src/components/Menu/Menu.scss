@@ -1,48 +1,45 @@
 @import '../../styles/partials/_mixins.scss';
 @import '../../styles/partials/_variables';
 
-// menu__contact__github
-
-li{
-padding: 0 $mobile-margin;
-}
-
-button{
-    background: rgba(0,0,0,0);
-    border: none;
-    color: $bright-orange;
-    cursor: pointer;
-}
-
-.menu{   
-    @include card-wrap;
-    margin: calc($mobile-margin/2);
-    height: 64px;
-
-    &__contact{
-        @include card;
-    
-        margin:2px;
-        display:flex;
-        height: 60px;
-
-        &--list{
-            display:flex;
-
-        }
-
-        &__github{
-
-            &--svg{
-                height: 16px;
-            }
-        }
-        &__linkedin{
-
-            &--svg{
-                height: 16px;
-            }
-        }
-
+.menu {
+    position: absolute;
+    top: 20px; /* Adjust as necessary */
+    right: 20px; /* Adjust as necessary */
+    display: inline-block;
+  
+    &__button {
+      background-color: transparent;
+      color: inherit;
+      padding: 10px 15px;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
     }
-}
+  
+    &__dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+  
+      &--open {
+        display: block;
+      }
+    }
+  
+    &__item {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+  
