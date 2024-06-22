@@ -19,7 +19,6 @@ li {}
     &--wrapper {
         @include card-wrap;
         margin: calc($mobile-margin/2);
-        height: 168px;
     }
 
     &__card {

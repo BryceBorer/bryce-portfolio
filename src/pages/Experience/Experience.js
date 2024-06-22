@@ -38,13 +38,13 @@ const Experience = () => {
               April 2024 - Current
             </li>
             <li>
-              Digital Youth Rally Hackathon Mentor
+              Digital Youth Rally Hackathon Mentor<br/>
               Open Hub Project<br/>
               May 2024
             </li>
             <li>
               Industry Competition Winner <br/>
-              
+
             </li>
           </ul>
         </div>

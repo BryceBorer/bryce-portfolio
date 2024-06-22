@@ -11,7 +11,7 @@
     &--wrapper {
         @include card;
         margin: calc($mobile-margin/2);
-        height: 300px;
+        // height: 300px;
         width: calc(100% - $mobile-margin);
         // @include card-wrap;
     }
@@ -19,31 +19,60 @@
     &__saicheese {
         @include project-card;
         
-        &--img {
-            @include project-image;
-            background-image: url('../../assets/images/saicheese-small.jpg');
+        &__title{
+            width: 100%;
 
-            @include tablet {
-                background-image: url('../../assets/images/saicheese-small.jpg');
+            &--img {
+                @include project-image;
+                background-image: url('../../assets/images/saicheese-title.png');
+                background-color: white;
+    
+                @include tablet {
+                    background-image: url('../../assets/images/saicheese-small.jpg');
+                }
             }
+        }
+
+        &--text{
+            @include project-card;
+            margin: $mobile-margin;
         }
     }
 
     &__industry {
         @include project-card;
 
-        &--img{
-            @include project-image;
-            background-image: url('../../assets/images/industry.jpg');
+        
+        &__title{
+            width: 100%;
+            &--img{
+                @include project-image;
+                background-image: url('../../assets/images/chec-title.svg');
+                background-color: white;
+            }
+        }
+        &--text{
+            @include project-card;
+            margin: $mobile-margin;
+            
         }
     }
 
     &__science{
         @include project-card;
 
-        &--img{
-            @include project-image;
-            background-image: url('../../assets/images/dscience2.jpg');
+        &__title{
+            width: 100%;
+            &--img{
+                @include project-image;
+                background-image: url('../../assets/images/jupyter-title.svg');
+                background-color: white;
+            }
+        }
+        &--text{
+            @include project-card;
+            margin: $mobile-margin;
+            
         }
     }
 }
