@@ -1,12 +1,9 @@
 import "./Home.scss";
-import githubIcon from "../../assets/icons/github_icon.svg"
-import linkedinIcon from "../../assets/icons/linkedin_icon.svg"
 import github from "../../assets/icons/github_icon.svg"
 import linkedIn from '../../assets/icons/linkedin_icon.svg'
 import CopyEmailButton from '../../Components/CopyEmailButton/CopyEmailbutton';
 
 const Home = () => {
-
 
     return (
         <section className="home">

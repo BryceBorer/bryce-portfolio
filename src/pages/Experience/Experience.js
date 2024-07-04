@@ -1,10 +1,6 @@
 import "./Experience.scss";
 
-import brainstationIcon from "../../assets/icons/brainstation-logo.svg"
-import brainstationIconWhite from "../../assets/icons/brainstation-logo-white.svg"
-
 const Experience = () => {
-
 
   return (
     <section className="exp">
