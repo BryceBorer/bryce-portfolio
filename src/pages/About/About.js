@@ -1,10 +1,7 @@
 import "./About.scss";
-import githubIcon from "../../assets/icons/github_icon.svg"
-import linkedinIcon from "../../assets/icons/linkedin_icon.svg"
 import bryceImage from "../../assets/images/bryce.jpg"
 
 const Hero = () => {
-
 
   return (
     <section className="hero">
