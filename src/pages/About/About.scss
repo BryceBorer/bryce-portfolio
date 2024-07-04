@@ -1,8 +1,6 @@
 @import '../../styles/partials/_mixins.scss';
 @import '../../styles/partials/_variables';
 
-// header__contact__github
-
 li {
     padding: 0 $mobile-margin;
 }
@@ -22,7 +20,6 @@ li {
         }
         
         margin: 2px;
-
 
         &__text {
             display: flex;

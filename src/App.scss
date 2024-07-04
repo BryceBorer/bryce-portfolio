@@ -1,7 +1,3 @@
-// .App {
-//     width: 100%;
-//   }
-
 * {
   margin: 0;
   padding: 0;
@@ -32,11 +28,10 @@ nav ul li {
 }
 
 main {
-  margin-top: 60px; /* Adjust based on the height of your header */
+  margin-top: 60px;
 }
 
 .section {
-  //height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,10 +43,6 @@ main {
   font-size: 3em;
   margin-bottom: 20px;
 }
-
-// .section p {
-//   font-size: 1.5em;
-// }
 
 .section:nth-child(odd) {
   background-color: #f9f9f9;

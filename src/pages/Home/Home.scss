@@ -1,0 +1,25 @@
+@import '../../styles/partials/_mixins.scss';
+@import '../../styles/partials/_variables';
+
+
+.home{
+
+    &__content{
+        display:flex;
+        flex-direction: column;
+        &__contact{
+            display:flex;
+            flex-direction: row;
+            width:300px;
+            justify-content: space-evenly;
+            
+            &__link{
+
+                &--img{
+                    height:60px;
+                    
+                }
+            }
+        }
+    }
+}

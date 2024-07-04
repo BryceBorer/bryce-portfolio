@@ -1,6 +1,4 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import Menu from './components/Menu/Menu';
 import Home from './pages/Home/Home'
 import About from './pages/About/About';
 import Experience from './pages/Experience/Experience';
@@ -11,8 +9,6 @@ import { Link, Element } from 'react-scroll';
 import { motion } from 'framer-motion';
 import './App.scss';
 import './styles/partials/_global.scss'
-
-
 
 function App() {
   return (
@@ -34,7 +30,7 @@ function App() {
           transition={{ duration: 0.5 }}
         >
           <Element name="home" className="section">
-            <Home/>
+            <Home />
           </Element>
         </motion.div>
 
@@ -45,7 +41,7 @@ function App() {
           transition={{ duration: 0.5 }}
         >
           <Element name="about" className="section">
-            <About/>
+            <About />
           </Element>
         </motion.div>
 
@@ -57,7 +53,7 @@ function App() {
         >
 
           <Element name="skills" className="section">
-            <Experience/>
+            <Experience />
           </Element>
         </motion.div>
 
@@ -72,25 +68,25 @@ function App() {
           </Element>
         </motion.div>
 
-{/* Chec */}
+        {/* Chec */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
           <Element name="projects" className="section">
-            <Projects2/>
+            <Projects2 />
           </Element>
         </motion.div>
 
-{/* Data Science */}
+        {/* Data Science */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
           <Element name="projects" className="section">
-            <Projects3/>
+            <Projects3 />
           </Element>
         </motion.div>
       </main>

@@ -1,0 +1,40 @@
+@import '../../styles/partials/_mixins.scss';
+@import '../../styles/partials/_variables';
+
+.copy-email-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .copy-email-button {
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    height: 0px;
+    width: 60px;
+  }
+  .email-icon {
+    margin-right: 10px;
+    height: 60px;
+    width: 60px;
+  }
+  
+  .notification {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e0ffe0;
+    border: 1px solid #00cc00;
+    border-radius: 4px;
+    color: #006600;
+  }
+  
+
+
+
+
+
+
+
+
+  
