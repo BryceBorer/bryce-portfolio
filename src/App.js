@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Menu from './components/Menu/Menu';
+import Home from './pages/Home/Home'
 import About from './pages/About/About';
 import Experience from './pages/Experience/Experience';
 import Projects1 from './pages/Project-1/Projects-1';
@@ -23,7 +24,6 @@ function App() {
             <li><Link to="about" smooth={true} duration={500}>About</Link></li>
             <li><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
             <li><Link to="skills" smooth={true} duration={500}>Skills</Link></li>
-            <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
           </ul>
         </nav>
       </header>
@@ -34,6 +34,7 @@ function App() {
           transition={{ duration: 0.5 }}
         >
           <Element name="home" className="section">
+            <Home/>
           </Element>
         </motion.div>
 
@@ -45,6 +46,18 @@ function App() {
         >
           <Element name="about" className="section">
             <About/>
+          </Element>
+        </motion.div>
+
+        {/* SKILLS */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+
+          <Element name="skills" className="section">
+            <Experience/>
           </Element>
         </motion.div>
 
@@ -80,52 +93,9 @@ function App() {
             <Projects3/>
           </Element>
         </motion.div>
-
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-
-          <Element name="skills" className="section">
-            <Experience/>
-          </Element>
-        </motion.div>
-
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <Element name="contact" className="section">
-            <h1>Contact</h1>
-            <p>Contact me section</p>
-          </Element>
-        </motion.div>
       </main>
     </div>
   );
 }
 
 export default App;
-
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <BrowserRouter>
-//       <Menu />
-//         <Routes>
-//           <Route path="/" element={<About/>} />
-//           <Route path="/experience" element={<Experience/>} />
-//           <Route path="/projects" element={<Projects/>} />
-//         </Routes>
-
-//       </BrowserRouter>
-//     </div>
-//   );
-// }
-// export default App;

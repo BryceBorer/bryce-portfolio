@@ -62,8 +62,6 @@ const Experience = () => {
           <ul className="exp__card__list">
             <li>
               Software Engineering Bootcamp - Brainstation 
-              <img className="icon" src={brainstationIconWhite}
-              alt="Brainstation Icon"/>
             </li>
             <span className="bold">&lt;br/&gt;</span>
             <li>
