@@ -22,13 +22,7 @@ const Hero = () => {
             My experience spans various technologies and programming languages, and I am
             always eager to learn and adapt to new challenges.
           </p>
-          <p className="hero__content__text--about">
-            Feel free to connect with me on LinkedIn or check out my projects.
-          </p>
-          <p className="hero__content__text--about">
-            Let's create something amazing together!</p>
         </div>
-
       </div>
     </section>
   );

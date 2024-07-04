@@ -26,16 +26,14 @@
 
 @mixin card-wrap {
   display: flex;
-  background-image: linear-gradient(to top right, $dark-teal , $dark-teal, $light-teal, $gray);
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%)
+  //background-image: linear-gradient(to top right, $dark-teal , $dark-teal, $light-teal, $gray);
+  // border-radius: 10px;
+  // box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%)
 }
 
 @mixin card {
   display: flex;
   align-items: center;
-  // background-image: linear-gradient(to top right, $dark-teal , $light-teal);
-  // background-color: white;
   border-radius: 10px;
   width: 100%
 }
@@ -44,7 +42,6 @@
   display:flex;
   flex-direction: column;
   align-items: center;
-  //flex-direction: column;
   margin: 8px;
   height: 100%;
   width: 100%;
@@ -61,7 +58,4 @@
   width: 100%;
   height: $desktop-margin;
   background-position: center;
-  @include tablet{
-    background-size: cover;
-  }
 }

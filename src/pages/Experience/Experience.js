@@ -17,9 +17,11 @@ const Experience = () => {
             <li>
               Front-end design with React.JS, SASS, and Axios
             </li>
+            <span className="bold">&lt;br/&gt;</span>
             <li>
               Back-end architecture with Express.JS and Knex
             </li>
+            <span className="bold">&lt;br/&gt;</span>
             <li>
               Javascript | HTML | CSS | Python | MySQL
             </li>
@@ -35,16 +37,19 @@ const Experience = () => {
             <li>
               Software Engineering Teaching Assistant<br/>
               Brainstation <br/>
-              April 2024 - Current
+              April 2024 - Current<br/>
             </li>
+            <span className="bold">&lt;br/&gt;</span>
             <li>
               Digital Youth Rally Hackathon Mentor<br/>
               Open Hub Project<br/>
-              May 2024
+              May 2024<br/>
             </li>
+            <span className="bold">&lt;br/&gt;</span>
             <li>
               Industry Competition Winner <br/>
-
+              Brainstation <br/>
+              February 2024
             </li>
           </ul>
         </div>
@@ -60,6 +65,7 @@ const Experience = () => {
               <img className="icon" src={brainstationIconWhite}
               alt="Brainstation Icon"/>
             </li>
+            <span className="bold">&lt;br/&gt;</span>
             <li>
               BSc Electrical Engineering - Ontario Tech University
             </li>

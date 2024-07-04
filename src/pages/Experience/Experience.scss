@@ -27,8 +27,7 @@ li {}
         flex-direction: column;
         margin: 2px;
         height: auto;
-
-        &__title {}
+        padding-bottom: $tablet-gutter;
 
         &__list {
             margin: 0;
@@ -36,4 +35,8 @@ li {}
 
     }
 
+}
+
+.bold{
+    font-weight: bold;
 }
