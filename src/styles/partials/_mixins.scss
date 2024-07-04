@@ -1,10 +1,17 @@
 @use "./variables" as *;
 
+@mixin small {
+  @media (max-width: $small-width) {
+    @content;
+  }
+}
+
 @mixin mobile {
   @media (min-width: $mobile-width) {
     @content;
   }
 }
+
 @mixin tablet {
   @media (min-width: $tablet-width) {
     @content;
@@ -15,4 +22,37 @@
   @media (min-width: $desktop-width) {
     @content;
   }
+}
+
+@mixin card-wrap {
+  display: flex;
+}
+
+@mixin card {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  width: 100%
+}
+
+@mixin project-card {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px;
+  height: 100%;
+  width: 100%;
+  @include tablet{
+    flex-direction: row;
+  }
+}
+
+@mixin project-image {
+  display: flex;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: $desktop-margin;
+  background-position: center;
 }

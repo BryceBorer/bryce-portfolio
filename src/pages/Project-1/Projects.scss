@@ -1,0 +1,69 @@
+@import '../../styles/partials/_mixins.scss';
+@import '../../styles/partials/_variables';
+
+.projects {
+   display:flex;
+   flex-direction: column;
+    margin: calc($mobile-margin/2);
+
+    &--wrapper {
+        @include card;
+        margin: calc($mobile-margin/2);
+        width: calc(100% - $mobile-margin);
+    }
+
+    &__saicheese {
+        @include project-card;
+        
+        &__title{
+            width: 100%;
+
+            &--img {
+                @include project-image;
+                background-image: url('../../assets/images/saicheese-title.png');
+                background-color: #f9f9f9;
+            }
+        }
+
+        &--text{
+            @include project-card;
+            margin: $mobile-margin;
+        }
+    }
+
+    &__industry {
+        @include project-card;
+
+        &__title{
+            width: 100%;
+            &--img{
+                @include project-image;
+                background-image: url('../../assets/images/chec-title.svg');
+                background-color: #f9f9f9;
+            }
+        }
+        &--text{
+            @include project-card;
+            margin: $mobile-margin;
+            
+        }
+    }
+
+    &__science{
+        @include project-card;
+
+        &__title{
+            width: 100%;
+            &--img{
+                @include project-image;
+                background-image: url('../../assets/images/jupyter-title.svg');
+                background-color: #f9f9f9;
+            }
+        }
+        &--text{
+            @include project-card;
+            margin: $mobile-margin;
+            
+        }
+    }
+}

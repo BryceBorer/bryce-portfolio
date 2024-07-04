@@ -1,0 +1,88 @@
+@import '../../styles/partials/_mixins.scss';
+@import '../../styles/partials/_variables';
+
+li {
+    padding: 0 $mobile-margin;
+}
+
+.hero {
+    @include card-wrap;
+    margin: calc($mobile-margin/2);
+
+    &__content {
+        @include card;
+        @include mobile{
+            flex-direction: column;
+            align-items: center;
+        }
+        @include tablet{
+            flex-direction: row;
+        }
+        
+        margin: 2px;
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+
+            &--name{
+                margin:calc($mobile-margin/2);
+            }
+            &--job{
+                margin:calc($mobile-margin/2);            
+            }
+
+            &--about{
+                margin:calc($mobile-margin/2);           
+             }
+
+        }
+
+        &__headshot {
+            @include small{
+                width: calc(100% - 16px);
+                height:auto;
+                object-fit: cover;
+                max-height: 380px;
+            }
+            @include mobile{
+                width: 300px;
+                height: auto;
+                max-height: 380px;
+            }
+            @include tablet{
+                width: 300px;
+                height: auto;
+                max-height: 380px;
+            }
+            
+
+            border-radius: 10px;
+            margin: calc($mobile-margin/2);
+            object-fit: cover;
+        }
+
+        &__contact {
+
+            &--list {
+                display: flex;
+
+            }
+
+            &__github {
+
+                &--svg {
+                    height: 16px;
+                }
+            }
+
+            &__linkedin {
+
+                &--svg {
+                    height: 16px;
+                }
+            }
+
+        }
+    }
+}

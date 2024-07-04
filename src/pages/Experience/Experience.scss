@@ -1,0 +1,42 @@
+@import '../../styles/partials/_mixins.scss';
+@import '../../styles/partials/_variables';
+
+ul {
+    padding: 0;
+}
+
+li {}
+
+
+.exp {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        flex-direction: row;
+    }
+
+    &--wrapper {
+        @include card-wrap;
+        margin: calc($mobile-margin/2);
+    }
+
+    &__card {
+        @include card;
+        align-items: center;
+        flex-direction: column;
+        margin: 2px;
+        height: auto;
+        padding-bottom: $tablet-gutter;
+
+        &__list {
+            margin: 0;
+        }
+
+    }
+
+}
+
+.bold{
+    font-weight: bold;
+}
