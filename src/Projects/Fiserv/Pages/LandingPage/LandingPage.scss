@@ -1,0 +1,57 @@
+@use "../../styles/partials/variables" as *;
+
+.title {
+  color: white;
+
+  font-size: 4rem;
+
+  &--logo {
+    width: 60px;
+    height: 60px;
+    //padding-left:16px;
+  }
+
+  &--wrapper {
+   margin-bottom: 450px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.scan-button-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $landingBG;
+  background-image: url("../../assets/images/fiserv_bg_new.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 320px;
+  max-width: 520px;
+  position: relative;
+
+  &__button {
+    width: 82px;
+    padding: 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: sticky;
+    background-color: rgba(0, 0, 0, 0);
+    // background-color: red;
+    color: rgba(0, 0, 0, 0);
+    border: none;
+    margin: 160px 0 0 5px;
+    transition: all 0.3s ease;
+    left: 50px;
+    //overflow: hidden;
+
+  }
+
+  &__button:hover {
+    box-shadow: 0 0 10px rgba(255, 0, 102, 0.6), 0 0 20px rgba(255, 0, 102, 0.4), 0 0 30px rgba(255, 0, 102, 0.2);
+
+  }
+}
